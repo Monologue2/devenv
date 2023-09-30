@@ -20,7 +20,7 @@ $ sudo ./create_container.sh
 $ <writing a class name>
 ```
 
-## Add your SSH config
+## Add your SSH config \[vscode ssh\]
 ```
 #password : donga
 Host donga
@@ -34,4 +34,9 @@ Host <student-id>
   Port 22
   User <class-name><student-id>
   ProxyJump donga
+```
+
+## Connect to SSH Server \[console\]
+```
+ssh -tt -p 80 donga@<beharbor-domain> ssh -p 22 <class-name><student-id>@<class-name><student-id>
 ```
