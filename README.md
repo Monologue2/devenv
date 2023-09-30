@@ -28,6 +28,7 @@ Host donga
   Port 80
   User donga
 
+#password : 1234
 Host <student-id>
   HostName <class-name><student-id>
   Port 22
