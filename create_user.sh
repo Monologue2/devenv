@@ -1,5 +1,5 @@
 #!/bin/bash
 
-adduser --disabled-password --gecos "" $2$1
-usermod -G sudo $2$1
-echo $2$1:1234 | chpasswd
+adduser --disabled-password --gecos "" "$1$2"
+usermod -aG sudo $1$2
+echo $1$2:$2 | chpasswd
