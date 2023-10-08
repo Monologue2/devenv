@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 EXPOSE 22
 
 ENV DEBIAN_FRONTEND=noninteractive
-ENV /opt/anaconda3/bin:$PATH
+ENV PATH=/opt/anaconda3/bin:$PATH
 ENV JAVA_HOME=/usr/lib/jvm/java-17-oracle
 ENV PATH=$PATH:$JAVA_HOME/bin
 
